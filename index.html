@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Romanjon's Translator">
+  <link rel="stylesheet" href="style.css">
+  <title>Romanjon's Translator</title>
+</head>
+<body>
+  <div class="container">
+    <div class="wrapper">
+      <div class="text-input">
+        <textarea class="from-text textarea" placeholder="Enter text"></textarea>
+        <textarea class="to-text textarea" placeholder="Translation" readonly disabled></textarea>
+      </div>
+      <ul class="controls">
+        <li class="row-from row">
+          <div class="icons">
+            <i class="icon"><img id="from" class="select-icon" src="./icons/speaker-filled-audio-tool.png" alt="icon"></i>
+            <i class="icon"><img id="from" class="select-icon copy" src="./icons/copy.png" alt="icon"></i>
+          </div>
+          <select class="select"></select>
+        </li>
+        <li class="exchange"><i class="exchange-link icon"><img class="select-icon" src="./icons/swap.png" alt="swap"></i></li>
+        <li class="row-to row">
+          <select class="select select-to"></select>
+          <div class="icons">
+            <i class="icon"><img id="to" class="select-icon" src="./icons/speaker-filled-audio-tool.png" alt="icon"></i>
+            <i class="icon"><img id="to" class="select-icon copy" src="./icons/copy.png" alt="icon"></i>
+          </div>
+        </li>
+      </ul>
+    </div>
+    <button class="button">Translate</button>
+  </div>
+</body>
+<script src="./countries.js"></script>
+<script src="./script.js"></script>
+</html>
